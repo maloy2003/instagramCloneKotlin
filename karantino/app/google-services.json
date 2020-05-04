@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1021848808233",
+    "firebase_url": "https://karantinogramm-b42f8.firebaseio.com",
+    "project_id": "karantinogramm-b42f8",
+    "storage_bucket": "karantinogramm-b42f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021848808233:android:e51811c541668809076538",
+        "android_client_info": {
+          "package_name": "com.soinikov.karantinogramm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021848808233-4jq275uv4n6j412ukm9ngh4pdg1l0c5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soinikov.karantinogramm",
+            "certificate_hash": "a9f1437555d22aed5f8a663752cf92b44c1ec605"
+          }
+        },
+        {
+          "client_id": "1021848808233-knadelbm7om5q5ia5d60cef8tholkrnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc69tmmsI5XIcUmMqgRq8pAhxmW21Qh40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021848808233-knadelbm7om5q5ia5d60cef8tholkrnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

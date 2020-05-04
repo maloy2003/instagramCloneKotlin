@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.HomeActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        style="@style/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/username_text"
+                style="@style/toolbar_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                style="@style/toolbar_img"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_more"/>
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/person1"
+        app:civ_border_color="@color/grey"
+        app:civ_border_width="3dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/buttonProfile"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/posts_count_text"
+        style="@style/profile_text_count"
+        android:text="50"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/posts_text"
+        app:layout_constraintEnd_toEndOf="@id/posts_text"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfile"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:id="@+id/posts_text"
+        style="@style/profile_text"
+        android:text="Posts"
+        app:layout_constraintTop_toBottomOf="@id/posts_count_text"
+        app:layout_constraintStart_toStartOf="@+id/buttonProfile"
+        app:layout_constraintEnd_toStartOf="@+id/followers_text"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:id="@+id/followers_count_text"
+        style="@style/profile_text_count"
+        android:text="100"
+        app:layout_constraintStart_toStartOf="@id/followers_text"
+        app:layout_constraintEnd_toEndOf="@id/followers_text"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts_count_text"
+        tools:ignore="MissingConstraints"
+       />
+
+    <TextView
+        android:id="@+id/followers_text"
+        style="@style/profile_text"
+        android:text="Followers"
+        app:layout_constraintTop_toBottomOf="@id/followers_count_text"
+        app:layout_constraintStart_toEndOf="@id/posts_text"
+        app:layout_constraintEnd_toStartOf="@id/following_text"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:id="@+id/following_count_text"
+        style="@style/profile_text_count"
+        android:text="111"
+        app:layout_constraintStart_toStartOf="@id/following_text"
+        app:layout_constraintEnd_toEndOf="@id/following_text"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts_count_text"
+        tools:ignore="MissingConstraints"
+       />
+
+
+    <TextView
+        android:id="@+id/following_text"
+        style="@style/profile_text"
+        android:text="Following"
+        app:layout_constraintTop_toBottomOf="@id/following_count_text"
+        app:layout_constraintStart_toEndOf="@id/followers_text"
+        app:layout_constraintEnd_toEndOf="@id/buttonProfile"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="176dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/button_bg"
+        android:minHeight="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Profile"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/following_text"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@+id/profile_image" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/images_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/top_border_grey"
+        app:layout_constraintTop_toBottomOf="@id/buttonProfile"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <include layout="@layout/bottom_nav_view"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

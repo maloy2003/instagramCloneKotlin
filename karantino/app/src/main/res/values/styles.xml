@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="profile_text" parent="text">
+         <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="profile_text_count" parent="text">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <dimen name="toolbarHeight">51dp</dimen>
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbarHeight</item>
+        <item name="android:background">@color/whiteish</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+    <style name="icon">
+        <item name="android:layout_width">@dimen/toolbarHeight</item>
+        <item name="android:layout_height">@dimen/toolbarHeight</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="toolbar_img">
+        <item name="android:layout_width">@dimen/toolbarHeight</item>
+        <item name="android:layout_height">@dimen/toolbarHeight</item>
+        <item name="android:padding">11dp</item>
+    </style>
+    <style name="toolbar_title">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">21sp</item>
+</style>
+    <style name="toolbar_text" parent="toolbar_title">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:layout_height">@dimen/toolbarHeight</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+    <style name="edit_profile_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">21dp</item>
+        <item name="android:layout_marginStart">21dp</item>
+    </style>
+    <style name="edit_profile_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="login_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/login_input_bg</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="login_btn" parent="login_input">
+        <item name="android:background">@drawable/login_btn_bg</item>
+        <item name="android:textColor">@color/login_btn_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@animator/login_btn_animator</item>
+    </style>
+
+
+</resources>

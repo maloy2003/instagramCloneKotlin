@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter full name and password."
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="111dp" />
+
+    <EditText
+        android:id="@+id/fullname_input"
+        style="@style/login_input"
+        android:inputType="textPersonName"
+        android:hint="Full name"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/password_input"
+        style="@style/login_input"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/fullname_input"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        style="@style/login_btn"
+        android:id="@+id/register_btn"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@id/password_input"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
